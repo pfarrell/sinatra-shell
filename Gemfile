@@ -1,14 +1,18 @@
 source "https://rubygems.org"
 
+gem 'rake'
+
 gem 'sinatra'
 gem 'sinatra-contrib'
-gem 'haml'
-gem 'rake'
 gem 'emk-sinatra-url-for'
 gem 'sinatra-respond_to'
+
+gem 'haml'
+
 gem 'capistrano', '~> 3.2.0'
 gem 'capistrano-bundler', '~> 1.1.2'
-gem 'passenger'
+
+gem 'rspec'
 
 group :development do
   gem 'byebug'

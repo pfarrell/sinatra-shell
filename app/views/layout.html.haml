@@ -6,10 +6,10 @@
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content=>"width=device-width, initial-scale=1, maximum-scale=1"}
     %meta{:name=>"apple-mobile-web-app-capable", :content=>"yes"}
-    %script{:type => "text/javascript", :src => "//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"}
+    %script{:type => "text/javascript", :src => "#{url_for('/libs/jquery/dist/jquery.min.js')}"}
     %link{:rel => "stylesheet", :href => "//fonts.googleapis.com/css?family=Cabin", :type => "text/css", :media => "all"}
-    %link{:href=>"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel=>"stylesheet"}
-    %script{:src=>"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
+    %link{:href=>"#{url_for('/libs/bootstrap/dist/css/bootstrap.min.css')}", :rel=>"stylesheet"}
+    %script{:src=>"#{url_for('/libs/bootstrap/dist/js/bootstrap.min.js')}"}
     %link{:rel => "stylesheet", :href => "#{url_for '/css/default.css'}", :type => "text/css", :media => "screen" }
   %body
     %nav.navbar.navbar-default{role: "navigation"}
@@ -23,7 +23,10 @@
         %a.navbar-brand{href:"#{url_for("/")}"}
           App
       .collapse.navbar-collapse#navbar-collapse
-        Menu stuff goes here
+        %ul.nav.navbar-nav
+          %li
+            %a{href: "#{url_for("/")}"}
+              Menu stuff goes here
     .container#content
       =yield
     .container.footer
