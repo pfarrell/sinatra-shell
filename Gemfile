@@ -15,6 +15,7 @@ gem 'capistrano-bundler', '~> 1.1.2'
 
 group :development do
   gem 'rspec'
+  gem 'simplecov'
   gem 'byebug'
   gem 'shotgun'
 end

@@ -17,6 +17,7 @@ GEM
     columnize (0.8.9)
     debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
+    docile (1.1.5)
     emk-sinatra-url-for (0.2.1)
       sinatra (>= 0.9.1.1)
     haml (4.0.5)
@@ -46,6 +47,11 @@ GEM
     rspec-support (3.1.0)
     shotgun (0.9)
       rack (>= 1.0)
+    simplecov (0.9.1)
+      docile (~> 1.1.0)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.8.0)
+    simplecov-html (0.8.0)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -78,6 +84,7 @@ DEPENDENCIES
   rake
   rspec
   shotgun
+  simplecov
   sinatra
   sinatra-contrib
   sinatra-respond_to
