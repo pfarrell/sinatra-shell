@@ -1,5 +1,6 @@
 class MyModel
-  def hello(str="stranger")
-    "cioa #{str}"
+  def hello(str=nil)
+    str = "stranger" if str.nil? || str.empty?
+    "cioa, #{str}"
   end
 end
