@@ -2,9 +2,9 @@
   "name": "APP",
   "version": "0.0.1",
   "dependencies": {
-    "bootstrap": "~3.2.0"
+    "masonry": "~3.1.5",
+    "bootstrap": "~3.3.0"
   },
-  "private": true,
   "homepage": "https://github.com/pfarrell/sinatra-shell",
   "authors": [
     "Patrick Farrell <mr.patfarrell@gmail.com>"
