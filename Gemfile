@@ -6,6 +6,8 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'emk-sinatra-url-for'
 gem 'sinatra-respond_to'
+gem 'sequel'
+gem 'pg'
 
 gem 'haml'
 
