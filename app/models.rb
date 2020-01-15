@@ -1,3 +1,4 @@
+require 'db'
 require 'sequel'
 require 'pg'
 require 'logger'
